@@ -1,0 +1,23 @@
+.container{
+			width:900px;
+			margin: 0 auto;
+			background-color: red;
+		}
+		.box{
+			float: left;
+			width:200px;
+			height: 600px;
+			margin-right: 20px;
+		}
+		.satu{
+			background-color: red;
+		}
+		.dua{
+			background-color:green;
+		}
+		.tiga{
+			background-color: orange;
+		}
+		.empat{
+			background-color: salmon;
+		}

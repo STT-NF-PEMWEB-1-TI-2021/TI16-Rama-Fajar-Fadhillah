@@ -1,0 +1,78 @@
+ body{
+    background: #eaeaea;
+  }
+		.container{
+      width: 97%;
+      height:500px;
+      margin:0 auto;
+      border:5px solid black;
+      display:flex;
+      flex-wrap:wrap;
+      box-sizing:border-box;
+      flex-direction:row;
+      justify-content:space-between;
+		  padding:10px;
+      background-color:white;
+    }
+
+   .box{
+    border-radius:5%;
+   }
+    .box1{
+      width:30%;
+      /*height:100px;*/
+      background-image: url(../img/1.jpg);
+      background-size:cover;
+      background-position:center;
+
+    }
+    .box2{
+      background-image: url(../img/2.jpg);
+      background-size:cover;
+      background-position:center;
+      width:30%;
+      background-color:orange;
+    }
+    .box3{
+       background-image: url(../img/4.png);
+      background-size:cover;
+      background-position:center;
+      width:30%;
+      background-color:yellow;
+    }
+    .box4{
+      background-image: url(../img/1.jpg);
+      background-size:cover;
+      background-position:center;
+      margin-top: 10px;
+      width:18%;
+      background-color:salmon;
+    }
+    .box5{
+      background-image: url(../img/2.jpg);
+      background-size:cover;
+      background-position:center;
+      margin-top: 10px;
+      width:18%;
+    }
+    .box6{
+      background-image: url(../img/4.png);
+      background-size:cover;
+      background-position:center;
+      margin-top: 10px;
+      width:18%;
+    }
+    .box7{
+       background-image: url(../img/2.jpg);
+      background-size:cover;
+      background-position:center;
+      margin-top: 10px;
+      width:18%;
+    }
+    .box8{
+       background-image: url(../img/1.jpg);
+      background-size:cover;
+      background-position:center;
+      margin-top: 10px;
+      width:18%;
+    }

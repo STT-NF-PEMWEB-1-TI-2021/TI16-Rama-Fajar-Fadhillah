@@ -1,0 +1,173 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <title>Cart</title> <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style type="text/css"> 
+  	nav{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #eaeaea;
+		}
+		nav ul {
+			position:relative;
+			list-style-type: none;
+		}
+		nav ul li{
+			display:inline-block;
+		}
+		nav ul li a{
+			padding-right:50px;
+			text-decoration: none;
+			color: black;
+		}
+		.container{
+			margin-top: 80px;
+		}
+		.table_barang{
+			width: 200px;
+			margin-left: 30px;
+		}
+		.container .table_barang table,tr,td{
+			padding: 5px 100px 5px 5px;
+			border-collapse: collapse;
+			border:2px solid black;
+		}
+		.total_card{
+			margin-left: 450px;
+			margin-top: 25px;
+			width:40%;
+			padding-left:25px;
+			background-color:#eaeaea;
+			display:flex;
+			height: 300px;
+			flex-direction: column;
+		}
+		.total_card .text_card{
+			font-size:12px;
+		}
+		footer{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #eaeaea;
+		}
+		footer nav{
+			position: relative;
+		}
+		footer nav ul li{
+			font-size:12px;
+		}
+		footer nav ul li a{
+			padding-right:20px;
+		}
+		footer nav ul span .box_input{
+			border: 1px solid black;
+		}
+
+		footer nav ul span .box_input input{
+			outline: none;
+		}
+
+		footer nav ul span .box_input button{
+		
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="tokorama.com" style="font-size:20px;">TokoRama</a></li>
+			<li style="margin-left:20px"><a href="home.tml">Home</a></li>
+			<li><a href="shopping.html">Shopping</a></li>
+			<li><a href="info.html">Info</a></li>
+			<span style="float:right;margin-right:100px;">
+				<li><i class="fas fa-search"></i></li>
+				<li><i class="fas fa-shopping-cart"></i></li>
+				<li>cart (1)</li>
+			</span>
+		</ul>
+	</nav>
+	<div class="container">
+	<form action="post" target="chekoout_0110221010_Rama-Fajar-Fadhillah.html">
+		<section class="table_barang" style="float:left;">
+			<h1>Your Cart</h1>
+			<table>
+			 <thead style="text-align:center;"> 
+				<tr>
+					<td>Item</td>		
+					<td>Price</td>		
+					<td>Quality</td>		
+				</tr>
+			 </thead>
+			 <tbody style="text-align:center">
+			 	<tr>
+			 		<td><img src="assets/img/t-shirt.jpeg" width="100px"></td>
+			 		<td>Rp.250.000</td>
+			 		<td>
+			 			 <select name="quality" id="quality">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+			 		</td>
+			 	</tr>
+			 	<tfoot>
+				 	<tr>
+				 		<td colspan="3" style="text-align:right;">Subtotal:<b>Rp.250.000</b></td>
+				 	</tr>
+			 	</tfoot>
+			 </tbody>
+			</table>
+		</section>
+		<section class="total_card" style="float:left;"> 
+				<header>
+					<h5>Summary (1 item)</h5>
+				</header>
+				<div class="text_card">
+					<p style="float:left;">Subtotal</p>
+					<p style="float:right;margin-right:50px">Rp.250.000</p>
+				</div>
+				<div class="text_card">
+					<p style="float:left;">Shipping</p>
+					<p style="float:right;margin-right:50px">-</p>
+				</div>
+				<div class="text_card">
+					<p style="float:left;">Est.Toxes</p>
+					<p style="float:right;margin-right:50px">-</p>
+				</div>
+				<hr width="90%" style="margin-left:-5px">
+				<div class="text_card">
+					<p style="float:left;font-weight: bold;">Total</p>
+					<p style="float:right;margin-right:50px;font-weight: bold;">Rp.250.000</p>
+				</div>
+				<button type="submit" style="cursor: pointer;width:90%;background: lightblue;border:none;padding: 5px;color:white;">Checkout</button>
+		</section>
+	</form>
+	</div>
+
+	<footer>
+			<nav>
+		<ul>
+			<li><a href="tokorama.com" style="font-size:20px;">TokoRama</a></li>
+			<li style="margin-left:5px"><a href="home.tml">Home</a></li>
+			<li><a href="shopping.html">Shopping</a></li>
+			<li><a href="info.html">Info</a></li>
+			<span style="float:right;margin-right:100px;">
+				<p style="font-size:12px;margin-top:-10px;">Stay in touch Join our Newsletter</p>
+				<div style="margin-top: -10px;" class="box_input">
+					<input type="email" name="email" placeholder="Enter email"><button>Subscribe</button>
+				</div>
+			</span>
+		</ul>
+	</nav>
+	</footer>
+</body>
+</html>

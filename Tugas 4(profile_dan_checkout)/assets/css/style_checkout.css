@@ -1,0 +1,135 @@
+	/*header*/
+		header nav{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #eaeaea;
+		}
+		header nav ul {
+			position:relative;
+			list-style-type: none;
+		}
+		header nav ul li{
+			display:inline-block;
+		}
+		header nav ul li a{
+			padding-right:50px;
+			text-decoration: none;
+			color: black;
+		}
+		header nav ul  span{
+			margin-right:100px;
+			float: right;
+		}
+/*akhir header*/
+
+/*container*/
+.container{
+	margin-top:70px;
+	padding:20px;
+}
+/*akhir container*/
+
+/*customer*/
+.customer_order{
+	width:850px;
+}
+.customer_order i {
+	font-size: 50px;
+	float: left;
+}
+.customer_order .top{
+	margin-left:10px;
+	margin-top:-20px;
+	float: left;
+}
+.customer_information{
+	width:850px;
+	float: left;
+}
+.customer_information h1{
+	margin-top: -5px;
+}
+.customer_information table{
+	margin-top:-30px;
+}
+/*akhir customer*/
+.clear{
+	clear: both;
+}
+
+/*table harga*/
+
+.table_harga{
+	margin-top:-180px;
+	margin-right: 20px;
+	float: right;
+	width: 380px;
+	height:370px;
+	padding:20px;
+	background:#eaeaea;
+}
+.table_harga .box_input input{
+	width:70%;
+	height: 25px;
+	border: none;
+}
+.table_harga .box_input button{
+	border:none;
+	cursor: pointer;
+	height:25px;
+	color: white;
+	background: salmon;
+	width: 100px;
+}
+/*akhir table harga*/
+
+/*footer*/
+
+		footer nav {
+			height:70px;
+			
+			position: absolute;
+			background:#eaeaea;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		footer nav ul{
+			position: relative;
+			list-style: none;
+		}
+		footer nav ul li{
+			display: inline-block;
+		}
+		footer nav ul li a.logo{
+			font-size:20px;
+			margin-right: 20px;
+		}
+		footer nav ul li a{
+			text-decoration:none;
+			color: black;
+		}
+		footer nav ul span{
+			margin-right:100px;
+			float: right;
+		}
+		footer nav ul span p{
+			margin-top:-10px;
+		}
+		footer nav ul span .box_input{
+			margin-top:-10px;
+		}
+		footer nav ul span .box_input{
+			border: 1px solid black;
+		}
+
+		footer nav ul span .box_input input{
+			outline: none;
+		}
+
+		footer nav ul span .box_input button{
+			border: none;
+		}
+/*akhir footer
