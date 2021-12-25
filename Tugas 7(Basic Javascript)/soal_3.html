@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>soal 3</title>
+	<style type="text/css">
+		.container{
+			width:600px;
+			margin: 0 auto;
+			border: 3px solid black;
+			text-align:center;
+			padding:20px;
+		}
+		table{
+			margin:auto;
+			border-collapse: collapse;
+		}
+		table,th,td{
+			text-align:center;
+			padding:5px;
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">	
+	<h1>Program Biaya Parkir</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Jam Masuk</th>
+				<th>Jam Keluar</th>
+				<th>Lama</th>
+				<th>Biaya Parkir</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="text" name="jam_masuk" id="jam_masuk"></td>
+				<td><input type="text" name="jam_keluar" id="jam_keluar" onchange="hitung()"></td>
+				<td id="lama"></td>
+				<td id="biaya"></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<script type="text/javascript">
+		function hitung(){
+		let jam_masuk=parseInt(document.getElementById("jam_masuk").value);
+		let jam_keluar=parseInt(document.getElementById("jam_keluar").value);
+		console.log(jam_masuk)
+		let lamaParkir=jam_keluar-jam_masuk;
+		console.log(lamaParkir)
+		let biayaAwal=3000;
+		let biayaParkir=1000;
+		let keluaranBiaya=(lamaParkir <= 2) ?  biayaAwal : lamaParkir * biayaParkir;
+		lama.innerHTML=" "+lamaParkir+" jam" ;
+		biaya.innerHTML="Rp"+keluaranBiaya;
+	}
+	</script>
+</body>
+</html>
