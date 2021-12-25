@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+.container_kirim{
+  width:100%;
+  display:table;
+}
+.container_kirim input{
+  width:88%;
+  padding:5px;
+}
+.container_kirim button{
+  width:10%;
+  padding:5px;
+}
+</style>
+</head>
+<body>
+
+<h2>Chat Messages</h2>
+
+<div class="container">
+
+</div>
+ <div class="container_kirim">
+  <input type="text" name="message" id="msg"><button id="kirim">Kirim</button>
+ </div>
+ <script type="text/javascript">
+   let kirim=document.getElementById("kirim");
+   kirim.addEventListener("click", function(){
+    let container=document.querySelector(".container");
+    let valueChat=document.getElementById("msg").value
+    let sendChat=document.createElement("p");
+    let textChat=document.createTextNode(valueChat);
+    sendChat.appendChild(textChat);
+    container.appendChild(sendChat)
+    document.getElementById('msg').value ="";
+
+   })
+ </script>
+</body>
+</html>
