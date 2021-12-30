@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+ <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="text-center pb-5">
+                         <h1>Form Validation</h1>
+                    </div>
+                    <div class="container col-sm-8 col-sm-offset-2 ">
+                        <form>
+                         <div>
+                            <div class="alert alert-danger" role="alert" style="display:none">
+                             Lengkapi data-data anda!
+                            </div>
+                             <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
+                                <p id="text_error" style="display:none">Batas maksimal 30 karakter</p>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" class="form-control" placeholder="masukkan email">
+                                <p id="text_error" style="display:none">Masukkan email dengan benar</p>
+                              </div>
+                                <div class="form-group">
+                                <label for="jam">Jam Keberangkatan</label>
+                                <input type="jam" id="jam" class="form-control" placeholder="00:00 - 23:59">
+                                <p id="text_error" style="display:none">Harus menggunakan format 00:00 - 23:59</p>
+                              </div>
+                              <div class="form-group">  
+                                <label for="jenis_lap">Tujuan Keberangkatan</label>
+                                <input type="tujuan" id="tujuan" class="form-control" placeholder="masukkan tujuan">
+                                <p id="text_error" style="display:none">Masukkan form tujuan dengan benar</p>
+                              </div>
+	    					  <div class="form-group">
+	                            <label for="jenis_lap">Jumlah Tiket</label>
+	                            <input type="text" id="jumlah" class="form-control" placeholder="masukkan jumlah">
+                                 <p id="text_error" style="display:none">jumlah harus bilangan bulat 0 - 9</p>
+	                          </div>
+    
+                              <button type="button" class="btn btn-success mt-4" onclick="return validation(nama.value, email.value, jam.value, tujuan.value, jumlah.value)" style="width:100%">Pesan</button>
+                            </div>
+                         </form>
+
+                         <table class="table mt-5">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">Nama</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Jam Keberangkatan</th>
+                              <th scope="col">Tujuan Keberangkatan</th>
+                              <th scope="col">Jumlah</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            
+                          </tbody>
+                        </table>
+
+                    </div>
+        </div>
+	<script type="text/javascript" src="assets/js/lib.js"></script>
+
+</body>
+</html>

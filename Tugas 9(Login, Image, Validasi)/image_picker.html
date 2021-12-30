@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Picker</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/img_picker.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Image Picker</h1>
+		<label for="daftar_gambar">Silahkan Pilih Gambar:</label>
+			<select id="daftar_gambar" name="daftar_gambar" onchange="image_picker(daftar_gambar.value)">
+				<option value="1.jpg">Gambar 1</option>
+				<option value="2.jpg">Gambar 2</option>
+				<option value="3.png">Gambar 3</option>
+				<option value="4.jpg">Gambar 4</option>
+				<option value="5.png">Gambar 5</option>
+				<option value="6.png">Gambar 6</option>
+			</select>
+		</label>
+		<img src="assets/img/1.jpg" alt="Gambar 1.jpg" id="gambar">
+	</div>
+	<script type="text/javascript" src="assets/js/lib.js"></script>
+</body>
+</html>
