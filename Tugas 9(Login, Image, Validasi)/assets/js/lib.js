@@ -43,7 +43,6 @@ function validation(nama, email, jam, tujuan, jumlah){
 	}else{
 		return input(nama, email, jam, tujuan, jumlah)
 	}
-	console.log(tujuan == "rama")
 
 	function input(nama, email, jam, tujuan, jumlah){
 		let table=document.querySelector(".table");
