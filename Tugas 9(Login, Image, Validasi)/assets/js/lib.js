@@ -43,8 +43,9 @@ function validation(nama, email, jam, tujuan, jumlah){
 	}else{
 		return input(nama, email, jam, tujuan, jumlah)
 	}
+}
 
-	function input(nama, email, jam, tujuan, jumlah){
+function input(nama, email, jam, tujuan, jumlah){
 		let table=document.querySelector(".table");
 		let row=table.insertRow(1)
 		let cell1=row.insertCell(0)
@@ -58,4 +59,3 @@ function validation(nama, email, jam, tujuan, jumlah){
 		cell4.innerHTML=tujuan
 		cell5.innerHTML=jumlah
 	}
-}
